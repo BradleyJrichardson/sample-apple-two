@@ -1,6 +1,22 @@
+<div class="center jumbotron">
     <h1>Sample Application No.2</h1>
     <h3>Homepage</h3>
     <hr>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque mollitia repellendus? Fugit doloremque, officiis maiores amet odit quos vero?</p>
     <hr>
-    <p><a href="http://localhost:3000/static_pages/help">Help</a></p>
+    <p>
+        <ul>
+            <li><%= link_to "Home",   '/' %></li>
+            <li><%= link_to "About",   '/about' %></li>
+            <li><%= link_to "Contact",   '/contact' %></li>
+        </ul>
+  
+    </p>
+
+
+     <%= link_to "Sign up now!", 'signup_path', class: "btn btn-lg btn-primary" %>
+
+    <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+
+    <%= link_to image_tag("kitten.jpg", alt: "Rails logo"), '#s' %>
+</div>
